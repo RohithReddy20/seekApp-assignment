@@ -1,0 +1,117 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.signupContainer {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+    align-self: center;
+    margin-top: 15%;
+    max-height: 600px;
+    max-width: 1000px;
+}
+
+.signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container {
+    grid-column: 1/2;
+    overflow: hidden;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.form-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h2 {
+    color: #bb86fc;
+    font-size: 35px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.form-container p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #6b6969;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    width: 120px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+    height: 40px;
+    color: #fff;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.button-signup {
+    background: #bb86fc;
+}
+.button-signin {
+    background: #7F39FB;
+}
+
+@media screen and (max-width: 700px) {
+    .signupContainer {
+        margin-top: 25%;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .signup {
+        display: block; 
+    }
+    .signupContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-height: 1500px;
+    }
+
+    .button-container {
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    .signupContainer {
+        margin-top: 5%;
+    }   
+}
